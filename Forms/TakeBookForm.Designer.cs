@@ -102,9 +102,9 @@ namespace Library_management_system.Forms
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.Size = new System.Drawing.Size(108, 15);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Location";
+            this.label3.Text = "Местонахождение";
             // 
             // panel3
             // 
@@ -133,9 +133,9 @@ namespace Library_management_system.Forms
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(18, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 15);
+            this.label8.Size = new System.Drawing.Size(81, 15);
             this.label8.TabIndex = 31;
-            this.label8.Text = "Find book: ";
+            this.label8.Text = "Найти книгу: ";
             // 
             // textBox2
             // 
@@ -189,9 +189,9 @@ namespace Library_management_system.Forms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(96, 15);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Find reader:";
+            this.label2.Text = "Найти читателя:";
             // 
             // dataGridView2
             // 
@@ -209,9 +209,9 @@ namespace Library_management_system.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 15);
+            this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Fill Date out:";
+            this.label1.Text = "Дата выдачи:";
             // 
             // dateTimePicker2
             // 
@@ -227,9 +227,9 @@ namespace Library_management_system.Forms
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 234);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 15);
+            this.label7.Size = new System.Drawing.Size(70, 15);
             this.label7.TabIndex = 30;
-            this.label7.Text = "Fill Date in:";
+            this.label7.Text = "Дата сдачи:";
             // 
             // dateTimePicker1
             // 
@@ -243,7 +243,7 @@ namespace Library_management_system.Forms
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.button2.Location = new System.Drawing.Point(102, 266);
+            this.button2.Location = new System.Drawing.Point(192, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 56);
             this.button2.TabIndex = 28;
@@ -254,7 +254,7 @@ namespace Library_management_system.Forms
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.button1.Location = new System.Drawing.Point(12, 266);
+            this.button1.Location = new System.Drawing.Point(32, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 56);
             this.button1.TabIndex = 27;
