@@ -953,7 +953,7 @@
     <value>Sitka Text, 16.25pt, style=Bold</value>
   </data>
   <data name="TitleLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 27</value>
+    <value>520, 27</value>
   </data>
   <data name="TitleLbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 32</value>
@@ -986,7 +986,7 @@
     <value>0, 0</value>
   </data>
   <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 86</value>
+    <value>1008, 86</value>
   </data>
   <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1041,7 +1041,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="SettingsBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 417</value>
+    <value>0, 585</value>
   </data>
   <data name="SettingsBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 56</value>
@@ -1523,7 +1523,7 @@
     <value>0, 86</value>
   </data>
   <data name="MenuPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 475</value>
+    <value>200, 643</value>
   </data>
   <data name="MenuPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1550,7 +1550,7 @@
     <value>0, 0</value>
   </data>
   <data name="DesktopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 561</value>
+    <value>1008, 729</value>
   </data>
   <data name="DesktopPanel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1583,7 +1583,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>784, 561</value>
+    <value>1008, 729</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Text, 8.25pt</value>
@@ -3435,8 +3435,11 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1024, 768</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>780, 580</value>
+    <value>1024, 768</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

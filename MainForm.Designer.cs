@@ -218,6 +218,7 @@ namespace Library_management_system
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.HelpButton = true;
             this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
