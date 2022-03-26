@@ -34,8 +34,8 @@ namespace Library_management_system
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.EnterBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LoginTextbox = new System.Windows.Forms.TextBox();
+            this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginPanel = new System.Windows.Forms.Panel();
@@ -70,15 +70,16 @@ namespace Library_management_system
             this.EnterBtn.UseVisualStyleBackColor = true;
             this.EnterBtn.Click += new System.EventHandler(this.EnterBtn_Click);
             // 
-            // textBox1
+            // LoginTextbox
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.LoginTextbox, "LoginTextbox");
+            this.LoginTextbox.Name = "LoginTextbox";
             // 
-            // textBox2
+            // PasswordTextbox
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.PasswordTextbox, "PasswordTextbox");
+            this.PasswordTextbox.Name = "PasswordTextbox";
+            this.PasswordTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // ExitBtn
             // 
@@ -100,9 +101,9 @@ namespace Library_management_system
             this.LoginPanel.Controls.Add(this.pictureBox1);
             this.LoginPanel.Controls.Add(this.label2);
             this.LoginPanel.Controls.Add(this.label3);
-            this.LoginPanel.Controls.Add(this.textBox2);
+            this.LoginPanel.Controls.Add(this.PasswordTextbox);
             this.LoginPanel.Controls.Add(this.EnterBtn);
-            this.LoginPanel.Controls.Add(this.textBox1);
+            this.LoginPanel.Controls.Add(this.LoginTextbox);
             resources.ApplyResources(this.LoginPanel, "LoginPanel");
             this.LoginPanel.Name = "LoginPanel";
             // 
@@ -117,6 +118,7 @@ namespace Library_management_system
             this.HelpButton = true;
             this.KeyPreview = true;
             this.Name = "LoginForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.LoginPanel.ResumeLayout(false);
@@ -131,8 +133,8 @@ namespace Library_management_system
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button EnterBtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox LoginTextbox;
+        private System.Windows.Forms.TextBox PasswordTextbox;
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel LoginPanel;

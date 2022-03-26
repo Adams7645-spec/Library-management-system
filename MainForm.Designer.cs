@@ -220,7 +220,7 @@ namespace Library_management_system
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.MePanel.ResumeLayout(false);

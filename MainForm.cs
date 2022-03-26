@@ -71,7 +71,7 @@ namespace Library_management_system
                 }
             }
         }
-
+        
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -231,6 +231,13 @@ namespace Library_management_system
         private void Form1_Load(object sender, EventArgs e, EventHandler load)
         {
 
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
+            this.Hide();
         }
     }
 }
