@@ -1,59 +1,27 @@
 ﻿using System;
+using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
 
 namespace Library_management_system
 {
     public partial class LoginForm : Form
     {
-        public static string connectString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Database21.accdb;";
-
-        private OleDbConnection myConnection;
-
-        OleDbCommand cmd;
-        OleDbDataAdapter da;
-        DataTable dt;
-        string sql;
+        private OleDbConnection connection = new OleDbConnection();
         public LoginForm()
         {
             InitializeComponent();
-            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
-            myConnection = new OleDbConnection(connectString);
-            myConnection.Open();
-        }
-        private int login(string sql)
-        {
-            int maxrow = 0;
             try
             {
-                myConnection.Open();
-                cmd = new OleDbCommand();
-                da = new OleDbDataAdapter();
-                dt = new DataTable();
-
-                cmd.Connection = myConnection;
-                cmd.CommandText = sql;
-
-                da.SelectCommand = cmd;
-                da.Fill(dt);
-
-                maxrow = dt.Rows.Count;
+                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
+                connection.Open();
+                MessageBox.Show("Success!");
+                connection.Close();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex);
             }
-            finally
-            {
-                da.Dispose();
-                myConnection.Close();
-            }
-            return maxrow;
         }
         private void LoginForm_Load(object sender, EventArgs e)
         {
@@ -66,27 +34,21 @@ namespace Library_management_system
         }
         private void LoginCheck()
         {
-            int maxrow = 0;
-            sql = "Select * From tbluser WHERE Login= '" + LoginTextbox.Text + "' AND Password='" + PasswordTextbox.Text + "'";
-            maxrow = login(sql);
+            connection.Open();
 
-            if (maxrow > 0)
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from LoginData where Login='" + LoginTextbox.Text + "'and Password='" + PasswordTextbox.Text + "'";
+            OleDbDataReader reader = command.ExecuteReader();
+
+            int count = 0;
+
+            while (reader.Read())
             {
-                LoginTextbox.Clear();
-                PasswordTextbox.Clear();
+                count++;
             }
-            else
-            {
-                MessageBox.Show("Your username and Password is incorrect.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
-        public void LoginStatusCheck()
-        {
-            string[] LoginList = { "Спинов Андрей", "Елена Леонидовна" };
-            string[] PassList = { "Adams7645", "ImHatedByLife727" };
-
-            if (LoginTextbox.Text == LoginList[0] && PasswordTextbox.Text == PassList[0])
+            if (count==1)
             {
                 MainForm MainForm = new MainForm();
                 MainForm.Show();
@@ -98,6 +60,7 @@ namespace Library_management_system
                 LoginTextbox.Text = "";
                 PasswordTextbox.Text = "";
             }
+            connection.Close();
         }
         private void EnterBtn_Click(object sender, EventArgs e)
         {
