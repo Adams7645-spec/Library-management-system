@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Drawing;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Threading.Tasks;
-using System.Text;
-using System.Linq;
-using System.Data;
-using System.ComponentModel;
-using System.Collections.Generic;
 
 namespace Library_management_system
 {
@@ -61,9 +54,9 @@ namespace Library_management_system
 
         private void DisableButton()
         {
-            foreach(Control previousBtn in MenuPanel.Controls)
+            foreach (Control previousBtn in MenuPanel.Controls)
             {
-                if(previousBtn.GetType() == typeof(Button))
+                if (previousBtn.GetType() == typeof(Button))
                 {
                     previousBtn.BackColor = Color.FromArgb(31, 40, 51);
                     previousBtn.ForeColor = Color.Gainsboro;
@@ -71,7 +64,7 @@ namespace Library_management_system
                 }
             }
         }
-        
+
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -91,7 +84,7 @@ namespace Library_management_system
         }
 
         //Actions
-            //MainMenuButtons
+        //MainMenuButtons
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.DashboardForm(), sender);
@@ -113,7 +106,7 @@ namespace Library_management_system
             OpenChildForm(new Forms.StorageForm(), sender);
         }
 
-            //Other
+        //Other
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -152,7 +145,7 @@ namespace Library_management_system
 
         private void TextBox_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label3_Click_1(object sender, EventArgs e)
