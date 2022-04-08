@@ -73,7 +73,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TimeLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="TimeLbl.Location" type="System.Drawing.Point, System.Drawing">
     <value>79, 56</value>
@@ -3436,7 +3436,7 @@
     <value>On</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 768</value>
+    <value>1920, 1080</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1024, 768</value>

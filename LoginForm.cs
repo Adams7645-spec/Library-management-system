@@ -7,6 +7,10 @@ namespace Library_management_system
 {
     public partial class LoginForm : Form
     {
+        public string UserName
+        {
+            get { return LoginTextbox.Text; }
+        }
         private OleDbConnection connection = new OleDbConnection();
         public LoginForm()
         {
@@ -14,14 +18,12 @@ namespace Library_management_system
             try
             {
                 connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
-                connection.Open();
-                MessageBox.Show("Success!");
-                connection.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex);
             }
+
         }
         private void LoginForm_Load(object sender, EventArgs e)
         {
@@ -32,13 +34,14 @@ namespace Library_management_system
         {
 
         }
-        private void LoginCheck()
+        public void LoginCheck()
         {
             connection.Open();
 
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
             command.CommandText = "select * from LoginData where Login='" + LoginTextbox.Text + "'and Password='" + PasswordTextbox.Text + "'";
+            string LoginedUserName = LoginTextbox.Text;
             OleDbDataReader reader = command.ExecuteReader();
 
             int count = 0;
@@ -48,7 +51,7 @@ namespace Library_management_system
                 count++;
             }
 
-            if (count==1)
+            if (count == 1)
             {
                 MainForm MainForm = new MainForm();
                 MainForm.Show();
@@ -60,9 +63,12 @@ namespace Library_management_system
                 LoginTextbox.Text = "";
                 PasswordTextbox.Text = "";
             }
+
             connection.Close();
         }
-        private void EnterBtn_Click(object sender, EventArgs e)
+        public static string LoginedUserName { get; set; }
+        
+        public void EnterBtn_Click(object sender, EventArgs e)
         {
             LoginCheck();
         }

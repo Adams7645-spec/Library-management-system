@@ -90,7 +90,6 @@ namespace Library_management_system
             // 
             // ProfilePic
             // 
-            this.ProfilePic.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.ProfilePic, "ProfilePic");
             this.ProfilePic.Name = "ProfilePic";
             this.ProfilePic.TabStop = false;
@@ -213,14 +212,13 @@ namespace Library_management_system
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.Controls.Add(this.DesktopPanel);
-            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.HelpButton = true;
             this.KeyPreview = true;
-            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.MePanel.ResumeLayout(false);

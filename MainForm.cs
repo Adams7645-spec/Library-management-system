@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Library_management_system
 {
@@ -11,15 +12,27 @@ namespace Library_management_system
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        private OleDbConnection connection = new OleDbConnection();
 
         //Constructor
         public MainForm()
         {
             InitializeComponent();
             random = new Random();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
+        }
+        //Methods
+        public void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
+            this.Hide();
         }
 
-        //Methods
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
@@ -107,6 +120,8 @@ namespace Library_management_system
         }
 
         //Other
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -219,18 +234,6 @@ namespace Library_management_system
         private void MePanel_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void Form1_Load(object sender, EventArgs e, EventHandler load)
-        {
-
-        }
-
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            LoginForm LoginForm = new LoginForm();
-            LoginForm.Show();
-            this.Hide();
         }
     }
 }

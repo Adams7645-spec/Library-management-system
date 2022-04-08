@@ -38,6 +38,7 @@ namespace Library_management_system.Forms
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "DashboardForm";
             this.Text = "Инфопанель";
+            this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.ResumeLayout(false);
 
         }

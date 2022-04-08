@@ -99,7 +99,7 @@
     <value>Sitka Small, 9.75pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 77</value>
+    <value>11, 72</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 19</value>
@@ -129,7 +129,7 @@
     <value>Sitka Small, 9.75pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 157</value>
+    <value>11, 152</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 19</value>
@@ -180,7 +180,7 @@
     <value>5</value>
   </data>
   <data name="LoginTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 100</value>
+    <value>11, 95</value>
   </data>
   <data name="LoginTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 23</value>
@@ -201,7 +201,10 @@
     <value>6</value>
   </data>
   <data name="PasswordTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 180</value>
+    <value>12, 175</value>
+  </data>
+  <data name="PasswordTextbox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
   <data name="PasswordTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 23</value>
