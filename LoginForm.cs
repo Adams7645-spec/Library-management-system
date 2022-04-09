@@ -12,7 +12,7 @@ namespace Library_management_system
             get { return LoginTextbox.Text; }
         }
         private OleDbConnection connection = new OleDbConnection();
-        public LoginForm()
+        public LoginForm(string UserName)
         {
             InitializeComponent();
             try
@@ -53,7 +53,7 @@ namespace Library_management_system
 
             if (count == 1)
             {
-                MainForm MainForm = new MainForm();
+                MainForm MainForm = new MainForm(LoginTextbox.Text);
                 MainForm.Show();
                 this.Hide();
             }

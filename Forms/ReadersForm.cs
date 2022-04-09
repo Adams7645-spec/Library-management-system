@@ -11,6 +11,7 @@ namespace Library_management_system.Forms
 {
     public partial class ReadersForm : Form
     {
+        string EmptyFields = "Обнаружены незаполненные поля!";
         public void RefreshData()
         {
             try
@@ -73,15 +74,14 @@ namespace Library_management_system.Forms
 
                 connection.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error " + ex);
+                MessageBox.Show(EmptyFields);
             }
             connection.Close();
             ClearAllTextBox();
             RefreshData();
         }
-
         private void id_textbox_TextChanged(object sender, EventArgs e)
         {
 
@@ -104,9 +104,9 @@ namespace Library_management_system.Forms
 
                 connection.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error " + ex);
+                MessageBox.Show(EmptyFields);
             }
             connection.Close();
             ClearAllTextBox();
@@ -130,13 +130,40 @@ namespace Library_management_system.Forms
 
                 connection.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error " + ex);
+                MessageBox.Show(EmptyFields);
             }
             connection.Close();
             ClearAllTextBox();
             RefreshData();
+        }
+
+        private void ReadersList_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DataGridViewCell Cell = null;
+                foreach (DataGridViewCell SelectedCell in ReadersList.SelectedCells)
+                {
+                    Cell = SelectedCell;
+                    break;
+                }
+                if (Cell != null)
+                {
+                    DataGridViewRow row = Cell.OwningRow;
+                    id_textbox.Text = row.Cells[0].Value.ToString();
+                    Name_textbox.Text = row.Cells[1].Value.ToString();
+                    Surname_textbox.Text = row.Cells[2].Value.ToString();
+                    SecondName_textbox.Text = row.Cells[3].Value.ToString();
+                    Birthday_textbox.Text = row.Cells[4].Value.ToString();
+                    Address_textbox.Text = row.Cells[5].Value.ToString();
+                }
+            }
+            catch 
+            {
+                //MessageBox.Show("Все поля не могут быть выбраны!");
+            }
         }
     }
 }

@@ -15,9 +15,11 @@ namespace Library_management_system
         private OleDbConnection connection = new OleDbConnection();
 
         //Constructor
-        public MainForm()
+        public MainForm(string UserName)
         {
             InitializeComponent();
+            UserNameLbl.Text = UserName;
+
             random = new Random();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
         }
@@ -28,7 +30,7 @@ namespace Library_management_system
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            LoginForm LoginForm = new LoginForm();
+            LoginForm LoginForm = new LoginForm(null);
             LoginForm.Show();
             this.Hide();
         }
