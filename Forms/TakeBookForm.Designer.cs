@@ -39,6 +39,7 @@ namespace Library_management_system.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TakeBookForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -57,19 +58,27 @@ namespace Library_management_system.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.BookPictureBox = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FindBookTextBox = new System.Windows.Forms.TextBox();
+            this.BookFindBtn = new System.Windows.Forms.Button();
+            this.DealNumberTextBox = new System.Windows.Forms.TextBox();
+            this.TitleCellTextBox = new System.Windows.Forms.TextBox();
+            this.SurnameCellTextBox = new System.Windows.Forms.TextBox();
+            this.TakedTextBox = new System.Windows.Forms.TextBox();
+            this.ReturnedTextBox = new System.Windows.Forms.TextBox();
+            this.IDCellTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.ReaderBooks = new System.Windows.Forms.DataGridView();
+            this.ReaderFindBtn = new System.Windows.Forms.Button();
             this.ReadersList = new System.Windows.Forms.DataGridView();
             this.FindReaderTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DateOfBookTaked = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DateOfBookReturned = new System.Windows.Forms.DateTimePicker();
+            this.ReturnBookBtn = new System.Windows.Forms.Button();
+            this.TakeBookBtn = new System.Windows.Forms.Button();
             this.ReaderBooksTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BooksData)).BeginInit();
@@ -93,10 +102,17 @@ namespace Library_management_system.Forms
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.FindBookTextBox);
+            this.panel1.Controls.Add(this.BookFindBtn);
+            this.panel1.Controls.Add(this.DealNumberTextBox);
+            this.panel1.Controls.Add(this.TitleCellTextBox);
+            this.panel1.Controls.Add(this.SurnameCellTextBox);
+            this.panel1.Controls.Add(this.TakedTextBox);
+            this.panel1.Controls.Add(this.ReturnedTextBox);
+            this.panel1.Controls.Add(this.IDCellTextBox);
             this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(449, 580);
+            this.panel1.Size = new System.Drawing.Size(393, 580);
             this.panel1.TabIndex = 27;
             // 
             // BooksData
@@ -146,7 +162,7 @@ namespace Library_management_system.Forms
             this.BooksData.RowTemplate.DividerHeight = 5;
             this.BooksData.RowTemplate.Height = 25;
             this.BooksData.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BooksData.Size = new System.Drawing.Size(412, 415);
+            this.BooksData.Size = new System.Drawing.Size(356, 415);
             this.BooksData.TabIndex = 38;
             // 
             // PlaceData
@@ -195,7 +211,7 @@ namespace Library_management_system.Forms
             this.PlaceData.RowTemplate.DividerHeight = 5;
             this.PlaceData.RowTemplate.Height = 25;
             this.PlaceData.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PlaceData.Size = new System.Drawing.Size(271, 87);
+            this.PlaceData.Size = new System.Drawing.Size(215, 87);
             this.PlaceData.TabIndex = 37;
             // 
             // panel4
@@ -206,7 +222,7 @@ namespace Library_management_system.Forms
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(160, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(271, 102);
+            this.panel4.Size = new System.Drawing.Size(215, 102);
             this.panel4.TabIndex = 36;
             // 
             // label3
@@ -255,12 +271,68 @@ namespace Library_management_system.Forms
             this.label8.TabIndex = 31;
             this.label8.Text = "Поиск книги: ";
             // 
-            // textBox2
+            // FindBookTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(160, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 23);
-            this.textBox2.TabIndex = 30;
+            this.FindBookTextBox.Location = new System.Drawing.Point(160, 12);
+            this.FindBookTextBox.Name = "FindBookTextBox";
+            this.FindBookTextBox.Size = new System.Drawing.Size(185, 23);
+            this.FindBookTextBox.TabIndex = 30;
+            this.FindBookTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
+            // BookFindBtn
+            // 
+            this.BookFindBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BookFindBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BookFindBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BookFindBtn.Image = ((System.Drawing.Image)(resources.GetObject("BookFindBtn.Image")));
+            this.BookFindBtn.Location = new System.Drawing.Point(351, 12);
+            this.BookFindBtn.Name = "BookFindBtn";
+            this.BookFindBtn.Size = new System.Drawing.Size(24, 24);
+            this.BookFindBtn.TabIndex = 27;
+            this.BookFindBtn.UseVisualStyleBackColor = false;
+            this.BookFindBtn.Click += new System.EventHandler(this.BookFindBtn_Click);
+            // 
+            // DealNumberTextBox
+            // 
+            this.DealNumberTextBox.Location = new System.Drawing.Point(254, 379);
+            this.DealNumberTextBox.Name = "DealNumberTextBox";
+            this.DealNumberTextBox.Size = new System.Drawing.Size(10, 23);
+            this.DealNumberTextBox.TabIndex = 39;
+            // 
+            // TitleCellTextBox
+            // 
+            this.TitleCellTextBox.Location = new System.Drawing.Point(254, 495);
+            this.TitleCellTextBox.Name = "TitleCellTextBox";
+            this.TitleCellTextBox.Size = new System.Drawing.Size(10, 23);
+            this.TitleCellTextBox.TabIndex = 39;
+            // 
+            // SurnameCellTextBox
+            // 
+            this.SurnameCellTextBox.Location = new System.Drawing.Point(254, 524);
+            this.SurnameCellTextBox.Name = "SurnameCellTextBox";
+            this.SurnameCellTextBox.Size = new System.Drawing.Size(10, 23);
+            this.SurnameCellTextBox.TabIndex = 39;
+            // 
+            // TakedTextBox
+            // 
+            this.TakedTextBox.Location = new System.Drawing.Point(254, 408);
+            this.TakedTextBox.Name = "TakedTextBox";
+            this.TakedTextBox.Size = new System.Drawing.Size(10, 23);
+            this.TakedTextBox.TabIndex = 39;
+            // 
+            // ReturnedTextBox
+            // 
+            this.ReturnedTextBox.Location = new System.Drawing.Point(254, 437);
+            this.ReturnedTextBox.Name = "ReturnedTextBox";
+            this.ReturnedTextBox.Size = new System.Drawing.Size(10, 23);
+            this.ReturnedTextBox.TabIndex = 39;
+            // 
+            // IDCellTextBox
+            // 
+            this.IDCellTextBox.Location = new System.Drawing.Point(254, 466);
+            this.IDCellTextBox.Name = "IDCellTextBox";
+            this.IDCellTextBox.Size = new System.Drawing.Size(10, 23);
+            this.IDCellTextBox.TabIndex = 39;
             // 
             // panel2
             // 
@@ -269,20 +341,22 @@ namespace Library_management_system.Forms
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.ReaderBooks);
+            this.panel2.Controls.Add(this.ReaderFindBtn);
             this.panel2.Controls.Add(this.ReadersList);
             this.panel2.Controls.Add(this.FindReaderTextBox);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.DateOfBookTaked);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.DateOfBookReturned);
+            this.panel2.Controls.Add(this.ReturnBookBtn);
+            this.panel2.Controls.Add(this.TakeBookBtn);
             this.panel2.Controls.Add(this.ReaderBooksTextBox);
-            this.panel2.Location = new System.Drawing.Point(468, 12);
+            this.panel2.Location = new System.Drawing.Point(412, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(312, 580);
+            this.panel2.Size = new System.Drawing.Size(368, 580);
             this.panel2.TabIndex = 28;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label4
             // 
@@ -342,9 +416,22 @@ namespace Library_management_system.Forms
             this.ReaderBooks.RowTemplate.DividerHeight = 5;
             this.ReaderBooks.RowTemplate.Height = 25;
             this.ReaderBooks.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReaderBooks.Size = new System.Drawing.Size(283, 184);
+            this.ReaderBooks.Size = new System.Drawing.Size(339, 184);
             this.ReaderBooks.TabIndex = 37;
             this.ReaderBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReaderBooks_CellContentClick);
+            this.ReaderBooks.SelectionChanged += new System.EventHandler(this.ReaderBooks_SelectionChanged);
+            // 
+            // ReaderFindBtn
+            // 
+            this.ReaderFindBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReaderFindBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ReaderFindBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ReaderFindBtn.Image = ((System.Drawing.Image)(resources.GetObject("ReaderFindBtn.Image")));
+            this.ReaderFindBtn.Location = new System.Drawing.Point(327, 12);
+            this.ReaderFindBtn.Name = "ReaderFindBtn";
+            this.ReaderFindBtn.Size = new System.Drawing.Size(24, 24);
+            this.ReaderFindBtn.TabIndex = 27;
+            this.ReaderFindBtn.UseVisualStyleBackColor = false;
             // 
             // ReadersList
             // 
@@ -378,6 +465,7 @@ namespace Library_management_system.Forms
             this.ReadersList.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.ReadersList.Location = new System.Drawing.Point(12, 41);
             this.ReadersList.Name = "ReadersList";
+            this.ReadersList.ReadOnly = true;
             this.ReadersList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
@@ -393,16 +481,16 @@ namespace Library_management_system.Forms
             this.ReadersList.RowTemplate.DividerHeight = 5;
             this.ReadersList.RowTemplate.Height = 25;
             this.ReadersList.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReadersList.Size = new System.Drawing.Size(283, 183);
+            this.ReadersList.Size = new System.Drawing.Size(339, 183);
             this.ReadersList.TabIndex = 36;
             this.ReadersList.SelectionChanged += new System.EventHandler(this.ReadersList_SelectionChanged);
             // 
             // FindReaderTextBox
             // 
             this.FindReaderTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FindReaderTextBox.Location = new System.Drawing.Point(169, 12);
+            this.FindReaderTextBox.Location = new System.Drawing.Point(225, 13);
             this.FindReaderTextBox.Name = "FindReaderTextBox";
-            this.FindReaderTextBox.Size = new System.Drawing.Size(126, 23);
+            this.FindReaderTextBox.Size = new System.Drawing.Size(96, 23);
             this.FindReaderTextBox.TabIndex = 35;
             this.FindReaderTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -411,7 +499,7 @@ namespace Library_management_system.Forms
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 12);
+            this.label2.Location = new System.Drawing.Point(13, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 20);
             this.label2.TabIndex = 34;
@@ -422,67 +510,69 @@ namespace Library_management_system.Forms
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 451);
+            this.label1.Location = new System.Drawing.Point(15, 454);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 32;
             this.label1.Text = "Дата выдачи:";
             // 
-            // dateTimePicker2
+            // DateOfBookTaked
             // 
-            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(115, 448);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(180, 23);
-            this.dateTimePicker2.TabIndex = 31;
+            this.DateOfBookTaked.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DateOfBookTaked.Location = new System.Drawing.Point(171, 448);
+            this.DateOfBookTaked.Name = "DateOfBookTaked";
+            this.DateOfBookTaked.Size = new System.Drawing.Size(180, 23);
+            this.DateOfBookTaked.TabIndex = 31;
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(12, 480);
+            this.label7.Location = new System.Drawing.Point(15, 477);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 15);
             this.label7.TabIndex = 30;
             this.label7.Text = "Дата сдачи:";
             // 
-            // dateTimePicker1
+            // DateOfBookReturned
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(115, 480);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(180, 23);
-            this.dateTimePicker1.TabIndex = 29;
+            this.DateOfBookReturned.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DateOfBookReturned.Location = new System.Drawing.Point(171, 477);
+            this.DateOfBookReturned.Name = "DateOfBookReturned";
+            this.DateOfBookReturned.Size = new System.Drawing.Size(180, 23);
+            this.DateOfBookReturned.TabIndex = 29;
             // 
-            // button2
+            // ReturnBookBtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(192, 509);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 56);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Return book";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ReturnBookBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReturnBookBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ReturnBookBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ReturnBookBtn.Location = new System.Drawing.Point(269, 506);
+            this.ReturnBookBtn.Name = "ReturnBookBtn";
+            this.ReturnBookBtn.Size = new System.Drawing.Size(82, 56);
+            this.ReturnBookBtn.TabIndex = 28;
+            this.ReturnBookBtn.Text = "Return book";
+            this.ReturnBookBtn.UseVisualStyleBackColor = false;
+            this.ReturnBookBtn.Click += new System.EventHandler(this.ReturnBookBtn_Click);
             // 
-            // button1
+            // TakeBookBtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(32, 509);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 56);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Take book";
-            this.button1.UseVisualStyleBackColor = false;
+            this.TakeBookBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.TakeBookBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.TakeBookBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TakeBookBtn.Location = new System.Drawing.Point(13, 509);
+            this.TakeBookBtn.Name = "TakeBookBtn";
+            this.TakeBookBtn.Size = new System.Drawing.Size(84, 56);
+            this.TakeBookBtn.TabIndex = 27;
+            this.TakeBookBtn.Text = "Take book";
+            this.TakeBookBtn.UseVisualStyleBackColor = false;
+            this.TakeBookBtn.Click += new System.EventHandler(this.TakeBookBtn_Click);
             // 
             // ReaderBooksTextBox
             // 
             this.ReaderBooksTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReaderBooksTextBox.Location = new System.Drawing.Point(271, 272);
+            this.ReaderBooksTextBox.Location = new System.Drawing.Point(327, 272);
             this.ReaderBooksTextBox.Name = "ReaderBooksTextBox";
             this.ReaderBooksTextBox.Size = new System.Drawing.Size(24, 23);
             this.ReaderBooksTextBox.TabIndex = 35;
@@ -518,16 +608,16 @@ namespace Library_management_system.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox BookPictureBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FindBookTextBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox FindReaderTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DateOfBookTaked;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker DateOfBookReturned;
+        private System.Windows.Forms.Button ReturnBookBtn;
+        private System.Windows.Forms.Button TakeBookBtn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
@@ -537,5 +627,13 @@ namespace Library_management_system.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView ReaderBooks;
         private System.Windows.Forms.TextBox ReaderBooksTextBox;
+        private System.Windows.Forms.Button BookFindBtn;
+        private System.Windows.Forms.Button ReaderFindBtn;
+        private System.Windows.Forms.TextBox IDCellTextBox;
+        private System.Windows.Forms.TextBox TitleCellTextBox;
+        private System.Windows.Forms.TextBox SurnameCellTextBox;
+        private System.Windows.Forms.TextBox TakedTextBox;
+        private System.Windows.Forms.TextBox ReturnedTextBox;
+        private System.Windows.Forms.TextBox DealNumberTextBox;
     }
 }

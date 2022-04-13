@@ -12,20 +12,20 @@ namespace Library_management_system.Forms
     public partial class ReadersForm : Form
     {
         string EmptyFields = "Обнаружены незаполненные поля!";
-        public void RefreshData()
+        public void Query(string QueryText, DataGridView DatagridName)
         {
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                string query = "select ID, Имя, Фамилия, Отчество, ДеньРождения, Адрес from ReadersData";
+                string query = QueryText;
                 command.CommandText = query;
 
                 OleDbDataAdapter DataAdapter = new OleDbDataAdapter(command);
                 DataTable DataTable = new DataTable();
                 DataAdapter.Fill(DataTable);
-                ReadersList.DataSource = DataTable;
+                DatagridName.DataSource = DataTable;
                 connection.Close();
 
             }
@@ -33,6 +33,24 @@ namespace Library_management_system.Forms
             {
                 MessageBox.Show("Error " + ex);
             }
+        }
+        public void MotionQuery(string QueryText)
+        {
+            connection.Open();
+
+            try
+            {
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = QueryText;
+                command.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox.Show(EmptyFields);
+            }
+            connection.Close();
+            ClearAllTextBox();
         }
         public void ClearAllTextBox()
         {
@@ -45,7 +63,7 @@ namespace Library_management_system.Forms
         }
         private void ReadersForm_Load(object sender, EventArgs e)
         {
-            RefreshData();
+            Query("select ID, Имя, Фамилия, Отчество, ДеньРождения, Адрес from ReadersData", ReadersList);
         }
 
         private OleDbConnection connection = new OleDbConnection();
@@ -54,89 +72,22 @@ namespace Library_management_system.Forms
             InitializeComponent();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
         }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Add_btn_Click(object sender, EventArgs e)
         {
-            connection.Open();
-
-            try
-            {
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "insert into ReadersData(Имя, Фамилия, Отчество, ДеньРождения, Адрес) values ('" + Name_textbox.Text + "','" + Surname_textbox.Text + "','" + SecondName_textbox.Text + "','" + Birthday_textbox.Text + "','" + Address_textbox.Text + "')";
-                command.ExecuteNonQuery();
-                MessageBox.Show("Данные сохранены.");
-
-                connection.Close();
-            }
-            catch
-            {
-                MessageBox.Show(EmptyFields);
-            }
-            connection.Close();
-            ClearAllTextBox();
-            RefreshData();
-        }
-        private void id_textbox_TextChanged(object sender, EventArgs e)
-        {
-
+            MotionQuery("insert into ReadersData(Имя, Фамилия, Отчество, ДеньРождения, Адрес) values ('" + Name_textbox.Text + "','" + Surname_textbox.Text + "','" + SecondName_textbox.Text + "','" + Birthday_textbox.Text + "','" + Address_textbox.Text + "')");
+            Query("select ID, Имя, Фамилия, Отчество, ДеньРождения, Адрес from ReadersData", ReadersList);
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            connection.Open();
-
-            try
-            {
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                string query = "update ReadersData set Имя='" + Name_textbox.Text + "' ,Фамилия='" + Surname_textbox.Text + "' ,Отчество='" + SecondName_textbox.Text + "' ,ДеньРождения='" + Birthday_textbox.Text + "' ,Адрес='" + Address_textbox.Text + "' where ID=" + id_textbox.Text + "";
-                command.CommandText = query;
-                //MessageBox.Show(query);
-
-                command.ExecuteNonQuery();
-                MessageBox.Show("Данные изменены.");
-
-                connection.Close();
-            }
-            catch
-            {
-                MessageBox.Show(EmptyFields);
-            }
-            connection.Close();
-            ClearAllTextBox();
-            RefreshData();
+            MotionQuery("update ReadersData set Имя='" + Name_textbox.Text + "' ,Фамилия='" + Surname_textbox.Text + "' ,Отчество='" + SecondName_textbox.Text + "' ,ДеньРождения='" + Birthday_textbox.Text + "' ,Адрес='" + Address_textbox.Text + "' where ID=" + id_textbox.Text + "");
+            Query("select ID, Имя, Фамилия, Отчество, ДеньРождения, Адрес from ReadersData", ReadersList);
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            connection.Open();
-
-            try
-            {
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                string query = "delete from ReadersData where ID=" + id_textbox.Text + "";
-                command.CommandText = query;
-                //MessageBox.Show(query);
-
-                command.ExecuteNonQuery();
-                MessageBox.Show("Данные удалены.");
-
-                connection.Close();
-            }
-            catch
-            {
-                MessageBox.Show(EmptyFields);
-            }
-            connection.Close();
-            ClearAllTextBox();
-            RefreshData();
+            MotionQuery("delete from ReadersData where ID=" + id_textbox.Text + "");
+            Query("select ID, Имя, Фамилия, Отчество, ДеньРождения, Адрес from ReadersData", ReadersList);
         }
 
         private void ReadersList_SelectionChanged(object sender, EventArgs e)
@@ -165,5 +116,10 @@ namespace Library_management_system.Forms
                 //MessageBox.Show("Все поля не могут быть выбраны!");
             }
         }
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

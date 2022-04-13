@@ -248,7 +248,7 @@ namespace Library_management_system.Forms
             this.id_textbox.Name = "id_textbox";
             this.id_textbox.Size = new System.Drawing.Size(191, 23);
             this.id_textbox.TabIndex = 0;
-            this.id_textbox.TextChanged += new System.EventHandler(this.id_textbox_TextChanged);
+            //this.id_textbox.TextChanged += new System.EventHandler(this.id_textbox_TextChanged);
             // 
             // Birthday_textbox
             // 

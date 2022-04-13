@@ -1,0 +1,57 @@
+﻿Взять книгу:
+	1. получить данные выбранного поля ReadersList
+		1.1 ID (ReadersData)
+		1.2 Фамилия
+	2. получить данные выбранного поля BooksData
+		2.1 Название 
+	3. получить данные DateOfBookTaked
+	4. получить данные DateOfBookReturned
+	5. склеить в Query
+
+
+	        //public void TakeBook()
+        //{
+        //    try
+        //    {
+        //        //Переменные и т.д.
+        //        DataGridViewCell Cell = null;
+        //        DateTime Taked = DateOfBookTaked.Value.Date.Add(DateOfBookTaked.Value.TimeOfDay);
+        //        DateTime Returned = DateOfBookReturned.Value.Date.Add(DateOfBookReturned.Value.TimeOfDay);
+
+        //        TakedTextBox.Text = Taked.ToString();
+        //        ReturnedTextBox.Text = Returned.ToString();
+
+        //        //получаю данные ReadersList
+        //        foreach (DataGridViewCell SelectedCell in ReadersList.SelectedCells)
+        //        {
+        //            Cell = SelectedCell;
+        //            break;
+        //        }
+        //        if (Cell != null)
+        //        {
+        //            DataGridViewRow row = Cell.OwningRow;
+        //            string IDCell = row.Cells[3].Value.ToString();
+        //            string SurnameCell = row.Cells[1].Value.ToString();
+
+        //            IDCellTextBox.Text = IDCell;
+        //            SurnameCellTextBox.Text = SurnameCell;
+        //        }
+        //        //получаю данные BooksData
+        //        foreach (DataGridViewCell SelectedCell in BooksData.SelectedCells)
+        //        {
+        //            Cell = SelectedCell;
+        //            break;
+        //        }
+        //        if (Cell != null)
+        //        {
+        //            DataGridViewRow row = Cell.OwningRow;
+        //            string TitleCell = row.Cells[1].Value.ToString();
+
+        //            TitleCellTextBox.Text = TitleCell;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error is: " + ex);
+        //    }
+        //}
