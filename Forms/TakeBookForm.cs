@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Data;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Library_management_system.Forms
 {
@@ -38,7 +40,8 @@ namespace Library_management_system.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error is: " + ex);
+                MessageBox.Show("Error is:" + ex);
+                connection.Close();
             }
         }
         public void MotionQuery(string QueryText)
@@ -52,9 +55,9 @@ namespace Library_management_system.Forms
                 command.ExecuteNonQuery();
                 connection.Close();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error is: " + ex);
+                //MessageBox.Show("Error is: " + ex);
             }
         }
         public void ReadersList_SelectionChanged(object sender, EventArgs e)
@@ -73,25 +76,57 @@ namespace Library_management_system.Forms
                     ReaderBooksTextBox.Text = row.Cells[3].Value.ToString();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error is: " + ex);
+
             }
         }
         private void ReaderBooks_SelectionChanged(object sender, EventArgs e)
         {
-            DataGridViewCell Cell = null;
-            foreach (DataGridViewCell SelectedCell in ReaderBooks.SelectedCells)
+            try
             {
-                Cell = SelectedCell;
-                break;
-            }
-            if (Cell != null)
-            {
-                DataGridViewRow row = Cell.OwningRow;
-                string TitleCell = row.Cells[0].Value.ToString();
+                DataGridViewCell Cell = null;
+                foreach (DataGridViewCell SelectedCell in ReaderBooks.SelectedCells)
+                {
+                    Cell = SelectedCell;
+                    break;
+                }
+                if (Cell != null)
+                {
+                    DataGridViewRow row = Cell.OwningRow;
+                    string TitleCell = row.Cells[0].Value.ToString();
 
-                DealNumberTextBox.Text = TitleCell;
+                    DealNumberTextBox.Text = TitleCell;
+                }
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show("Error is: " + ex);
+            }
+        }
+        private void BooksData_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DataGridViewCell Cell = null;
+                foreach (DataGridViewCell SelectedCell in BooksData.SelectedCells)
+                {
+                    Cell = SelectedCell;
+                    break;
+                }
+                if (Cell != null)
+                {
+                    DataGridViewRow row = Cell.OwningRow;
+                    string BookID = row.Cells[0].Value.ToString();
+
+                    PlaceDataTextBox.Text = BookID;
+                    LocationTextbox.Text = row.Cells[5].Value.ToString();
+                    BookPictureBox.Image = Image.FromFile(LocationTextbox.Text);
+                }
+            }
+            catch
+            {
+
             }
         }
         public void RefreshReadersData()
@@ -100,7 +135,7 @@ namespace Library_management_system.Forms
         }
         public void RefreshBooksData()
         {
-            Query("select ID, Название, Жанр, Автор, Издатель, Расположение from BooksData", BooksData);
+            Query("select ID, Название, Жанр, Автор, Издатель, Location from BooksData", BooksData);
         }
         private void ReaderBooksTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -108,9 +143,21 @@ namespace Library_management_system.Forms
             {
                 Query("select Сделка, Название, Выдано, Сдано from УчетКниг where ID_читателя=" + ReaderBooksTextBox.Text + "", ReaderBooks);
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show("Error is: " + ex);
+            }
+        }
+        private void PlaceDataTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Query("select Название, Ряд, Стелаж, Полка from BooksData where ID=" + PlaceDataTextBox.Text + "", PlaceData);
+                //LoadPicture();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error is: " + ex);
             }
         }
         private void TakeBookBtn_Click(object sender, EventArgs e)
@@ -152,12 +199,19 @@ namespace Library_management_system.Forms
                 TitleCellTextBox.Text = TitleCell;
             }
             MotionQuery("insert into УчетКниг(ID_читателя, Название, Фамилия, Выдано, Сдано) values ('" + IDCellTextBox.Text + "','" + TitleCellTextBox.Text + "','" + SurnameCellTextBox.Text + "','" + TakedTextBox.Text + "', '" + ReturnedTextBox.Text + "')");
-            Query("select Название, Выдано, Сдано from УчетКниг where ID_читателя=" + ReaderBooksTextBox.Text + "", ReaderBooks);
+            Query("select Сделка, Название, Выдано, Сдано from УчетКниг where ID_читателя=" + ReaderBooksTextBox.Text + "", ReaderBooks);
         }
         private void ReturnBookBtn_Click(object sender, EventArgs e)
         {
-            MotionQuery("delete from УчетКниг where Сделка=" + DealNumberTextBox.Text + "");
-            Query("select Название, Выдано, Сдано from УчетКниг where ID_читателя=" + ReaderBooksTextBox.Text + "", ReaderBooks);
+            try
+            {
+                MotionQuery("delete from УчетКниг where Сделка=" + DealNumberTextBox.Text + "");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error is: " + ex);
+            }
+            Query("select Сделка, Название, Выдано, Сдано from УчетКниг where ID_читателя=" + ReaderBooksTextBox.Text + "", ReaderBooks);
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -177,8 +231,27 @@ namespace Library_management_system.Forms
         {
 
         }
+        private void TakeBookForm_Load_1(object sender, EventArgs e)
+        {
 
-        private void BookFindBtn_Click(object sender, EventArgs e)
+        }
+
+        private void PlaceData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BooksData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FindBookTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
