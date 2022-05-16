@@ -21,7 +21,7 @@ namespace Library_management_system
             UserNameLbl.Text = UserName;
 
             random = new Random();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb";
         }
         //Methods
         public void MainForm_Load(object sender, EventArgs e)
@@ -185,10 +185,10 @@ namespace Library_management_system
             StorageBtn.BackColor = Color.FromArgb(31, 40, 51);
         }
 
-        private void StatBtn_Leave(object sender, EventArgs e)
-        {
-            StatBtn.BackColor = Color.FromArgb(31, 40, 51);
-        }
+        //private void StatBtn_Leave(object sender, EventArgs e)
+        //{
+        //    StatBtn.BackColor = Color.FromArgb(31, 40, 51);
+        //}
         private void DashboardBtn_Leave(object sender, EventArgs e)
         {
             DashboardBtn.BackColor = Color.FromArgb(31, 40, 51);
@@ -234,6 +234,16 @@ namespace Library_management_system
         }
 
         private void MePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TopPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MenuPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

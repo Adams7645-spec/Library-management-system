@@ -17,7 +17,7 @@ namespace Library_management_system
             InitializeComponent();
             try
             {
-                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\Program Files\Visual studio\Repos\Library-management-system\Database21.accdb;";
+                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb;";
             }
             catch (Exception ex)
             {

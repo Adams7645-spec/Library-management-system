@@ -248,7 +248,6 @@ namespace Library_management_system.Forms
             this.id_textbox.Name = "id_textbox";
             this.id_textbox.Size = new System.Drawing.Size(191, 23);
             this.id_textbox.TabIndex = 0;
-            //this.id_textbox.TextChanged += new System.EventHandler(this.id_textbox_TextChanged);
             // 
             // Birthday_textbox
             // 
@@ -283,7 +282,7 @@ namespace Library_management_system.Forms
             // 
             // Add_btn
             // 
-            this.Add_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Add_btn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_btn.Location = new System.Drawing.Point(3, 29);
             this.Add_btn.Name = "Add_btn";
@@ -295,7 +294,7 @@ namespace Library_management_system.Forms
             // 
             // btn_edit
             // 
-            this.btn_edit.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_edit.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_edit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_edit.Location = new System.Drawing.Point(3, 119);
             this.btn_edit.Name = "btn_edit";
@@ -307,7 +306,7 @@ namespace Library_management_system.Forms
             // 
             // btn_delete
             // 
-            this.btn_delete.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_delete.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_delete.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_delete.Location = new System.Drawing.Point(3, 75);
             this.btn_delete.Name = "btn_delete";
@@ -330,6 +329,7 @@ namespace Library_management_system.Forms
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(122, 580);
             this.panel3.TabIndex = 9;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label9
             // 

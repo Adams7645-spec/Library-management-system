@@ -57,51 +57,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TopPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MePanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <metadata name="TimeLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TimeLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TimeLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="TimeLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 56</value>
-  </data>
-  <data name="TimeLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="TimeLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="TimeLbl.Text" xml:space="preserve">
-    <value>20:49</value>
-  </data>
-  <data name="&gt;&gt;TimeLbl.Name" xml:space="preserve">
-    <value>TimeLbl</value>
-  </data>
-  <data name="&gt;&gt;TimeLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TimeLbl.Parent" xml:space="preserve">
-    <value>MePanel</value>
-  </data>
-  <data name="&gt;&gt;TimeLbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="button8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ProfilePic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="UserNameLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TimeLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="button8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -112,33 +86,6 @@
         0x1jhAcDkAxKMCi86FAGBrAbFOUCqRA/tmVZfw7AMAwxKEoFUuE5HAixgrA1KJ1MFEWruq4/KWUM+4xW
         0OSNA1kYhnj3pqv8skDbUy/qrCe7EIz9AGiDb129BPTGAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="button8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="button8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>873, 13</value>
-  </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 24</value>
-  </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
-  </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
-    <value>MePanel</value>
-  </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="ProfilePic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -862,303 +809,9 @@
         RK5CYII=
 </value>
   </data>
-  <data name="ProfilePic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="ProfilePic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 64</value>
-  </data>
-  <data name="ProfilePic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="ProfilePic.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ProfilePic.Name" xml:space="preserve">
-    <value>ProfilePic</value>
-  </data>
-  <data name="&gt;&gt;ProfilePic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProfilePic.Parent" xml:space="preserve">
-    <value>MePanel</value>
-  </data>
-  <data name="&gt;&gt;ProfilePic.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="UserNameLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="UserNameLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="UserNameLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Small, 14.25pt, style=Bold</value>
-  </data>
-  <data name="UserNameLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 13</value>
-  </data>
-  <data name="UserNameLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 28</value>
-  </data>
-  <data name="UserNameLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="UserNameLbl.Text" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="&gt;&gt;UserNameLbl.Name" xml:space="preserve">
-    <value>UserNameLbl</value>
-  </data>
-  <data name="&gt;&gt;UserNameLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserNameLbl.Parent" xml:space="preserve">
-    <value>MePanel</value>
-  </data>
-  <data name="&gt;&gt;UserNameLbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="MePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="MePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 86</value>
-  </data>
-  <data name="MePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;MePanel.Name" xml:space="preserve">
-    <value>MePanel</value>
-  </data>
-  <data name="&gt;&gt;MePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MePanel.Parent" xml:space="preserve">
-    <value>TopPanel</value>
-  </data>
-  <data name="&gt;&gt;MePanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TitleLbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="TitleLbl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TitleLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 16.25pt, style=Bold</value>
-  </data>
-  <data name="TitleLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 27</value>
-  </data>
-  <data name="TitleLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 32</value>
-  </data>
-  <data name="TitleLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TitleLbl.Text" xml:space="preserve">
-    <value>Инфопанель</value>
-  </data>
-  <data name="TitleLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Name" xml:space="preserve">
-    <value>TitleLbl</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.Parent" xml:space="preserve">
-    <value>TopPanel</value>
-  </data>
-  <data name="&gt;&gt;TitleLbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="TopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="TopPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 86</value>
-  </data>
-  <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Name" xml:space="preserve">
-    <value>TopPanel</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Parent" xml:space="preserve">
-    <value>DesktopPanel</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="SettingsBtn.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SettingsBtn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="SettingsBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="SettingsBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
-  </data>
-  <data name="SettingsBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEb
-        agABG2oB3aRa6wAAA7VJREFUWEe1l11IU2EYxwc2piKYXkTiTUU1EyQwbKuugyBCkqK8qO4EDQdlSRdr
-        FYIIoluICibLbgRBMzVUULto4IXeiFKi5AcON506ncPZ1FzP4/4dNs+7L3M/OKDn/N/nec95n68pjkDy
-        zMzMutvt9gVe4+PjNnqm8kviiEajueILAT07B9mxkEGX7I1qamoK4U9GdXX1dcgCSaYr3f9nlDQ3Nz/Z
-        3NzcmZ6e/llcXHwBtxU5OTlnBwcHv8CfjO7u7obs7OzTkCt0Op12fn7eurq6um0ymW7idnjY+dbW1g5s
-        +paXl111dXXPxsbGvtFZ7+F2SJxO5+7o6OjXlpaWNy6Xy4PbvvX19cibOOz8uIm0iQz+7NDGjZWVlW3y
-        ddLvMhgVnfkkdHFjZGTkO/k64Xd5iKKioosOh8MFrRDK919dXV1Py8rKchMSEjKVSmWmXq+/SgH4YnJy
-        0gaZkNnZ2SUKailIhdTX1z+HPggKqL3W1lZdWlqaElIZ9Cyxvb39rcfj+YNlQVAK50MaGo526CXYudFo
-        vAVJRBobGx+JNjEwMPAREjGc56JU4zeHJGromIxYLrG2trZLPk5BIpGs1Wpzq6qqHvT393+GVoLPPNxn
-        DwUfx8LCgh1mJHp7ez+Qr/tqtfoyyVQKbix4JoQDzm8ydqhqNsCMkImJCZuCO1k4ysvLr8BezFCm3IYZ
-        IVSifRE3wKkGezFDa9X7+/uwJCeqDXCew17M0Nqs/96AwWDQwF7MUIG6CzNCDjbAgYD/hfT09LyEvZix
-        WCxmmJHBX2Z4eHiadYk8yVCVusH9HM8lpqamllJTU5MOLMYApWHK4uKiE2YkOjs7DZSG1ygNz5AsuCfw
-        MMH9HFqJjo6Od5BEzdDQ0Ccsl7DZbF7yIeyEEjxMQC/BZbWpqekxJBFpa2t75fV6ZdHX19dngiQ0ZrNZ
-        D30QvAkqSqZwx8Gfnd9c5JyhRvcQUjGlpaV5Gxsb0hglwmq1LnGFowJ1h/I8i1LtEmVKAQccnXnYqsqt
-        vqSk5DzcyUiam5uzQhs3qLf8IF/C3w/pPL1CFzeoQbnJV4rf5SF4YOTBEdpjx263uysrK3PhTgxvguLg
-        N9b46FgctbW1+TxMcD/H7ZBwqlFbf09DSWHgeBeV83/Q4gKqB14aIC00J/IvpAN4mOB+DpsyqMi8Dsxz
-        Djg+cwpcT0VFRR5uRw3/nJJNr/QW9+BPBj3TQhYIB5z4zI8CTzLwFwTXdpTXuKPiBsadLPBCYxHP+yFR
-        KP4CXRzOMQO63gEAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="SettingsBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="SettingsBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 585</value>
-  </data>
-  <data name="SettingsBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 56</value>
-  </data>
-  <data name="SettingsBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="SettingsBtn.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="SettingsBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="SettingsBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;SettingsBtn.Name" xml:space="preserve">
-    <value>SettingsBtn</value>
-  </data>
-  <data name="&gt;&gt;SettingsBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SettingsBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;SettingsBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="StatBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="StatBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="StatBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
-  </data>
-  <data name="StatBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="StatBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="StatBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 259</value>
-  </data>
-  <data name="StatBtn.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="StatBtn.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="StatBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 65</value>
-  </data>
-  <data name="StatBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="StatBtn.Text" xml:space="preserve">
-    <value>Статистика</value>
-  </data>
-  <data name="StatBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="StatBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;StatBtn.Name" xml:space="preserve">
-    <value>StatBtn</value>
-  </data>
-  <data name="&gt;&gt;StatBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;StatBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="StorageBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="StorageBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="StorageBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
-  </data>
   <data name="StorageBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1217,51 +870,6 @@
         RDTcIwm1hQIn7Cy+Xi618c8e348dO/ZnxIAPghz7SFXC94o9PT25eB3VlA+E4wYODg4doKStl5fXFtCT
         aziVdJwoL4fL4E7HTExMPri1AGQb0X25Di2rriGeMh0dHS3/B7Ag6cSWzQgJAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="StorageBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="StorageBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 194</value>
-  </data>
-  <data name="StorageBtn.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="StorageBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 65</value>
-  </data>
-  <data name="StorageBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="StorageBtn.Text" xml:space="preserve">
-    <value>Хранилище</value>
-  </data>
-  <data name="StorageBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="StorageBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;StorageBtn.Name" xml:space="preserve">
-    <value>StorageBtn</value>
-  </data>
-  <data name="&gt;&gt;StorageBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StorageBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;StorageBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ReadersBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="ReadersBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ReadersBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
   </data>
   <data name="ReadersBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1322,51 +930,6 @@
         N+pzek7/n+Tk9C/AbUzlihGBnQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="ReadersBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ReadersBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 129</value>
-  </data>
-  <data name="ReadersBtn.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="ReadersBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 65</value>
-  </data>
-  <data name="ReadersBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ReadersBtn.Text" xml:space="preserve">
-    <value>Читатели</value>
-  </data>
-  <data name="ReadersBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ReadersBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;ReadersBtn.Name" xml:space="preserve">
-    <value>ReadersBtn</value>
-  </data>
-  <data name="&gt;&gt;ReadersBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ReadersBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;ReadersBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TakeBookBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="TakeBookBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="TakeBookBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
-  </data>
   <data name="TakeBookBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAI
@@ -1393,201 +956,25 @@
         YII=
 </value>
   </data>
-  <data name="TakeBookBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="TakeBookBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 64</value>
-  </data>
-  <data name="TakeBookBtn.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="TakeBookBtn.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="TakeBookBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 65</value>
-  </data>
-  <data name="TakeBookBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="TakeBookBtn.Text" xml:space="preserve">
-    <value>Выдача</value>
-  </data>
-  <data name="TakeBookBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="TakeBookBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;TakeBookBtn.Name" xml:space="preserve">
-    <value>TakeBookBtn</value>
-  </data>
-  <data name="&gt;&gt;TakeBookBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TakeBookBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;TakeBookBtn.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="DashboardBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="DashboardBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="DashboardBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 14.25pt, style=Bold</value>
-  </data>
   <data name="DashboardBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        n0GS/gFQdWv3JZvtrwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        1wAAAdcBjJIIaAAAAa5JREFUaEPtmYFxgzAMRRkki2SQDtJFOkgG6SIdJP1ffBMDxsYpwtzV707XIn1h
+        fYov13io5fniQ6kkqD9GmZHUIl/UHI4WI90A8n4GcMMbb5qIwBciVQ/xjQhsaUuau8apA42fiPjmrfhB
+        1JlAA4dn41Xgg9xnAkK+NvGT5+8PlY0xbbjsAfy8I5iPa09rKAEd37sAh7+pNDGWDBcDMcobSuWBLjYw
+        e/IB1cgZBrixDaXyQDcZUGqFyqRkIOylzY1Y0iBXnGcGdHsMUMNYvV5LoOH7nN2AOQ3yxxs4E4zRDTQF
+        Y3QDTcEY3UBTMMbxBlR+h+wHXwr2jK3dwAuUqHknip/cS9RnKJUHuroGZzBGN9AUjNENNAVjHG8AJf4X
+        5RZaxsC1iwFXtIyBSxcD1LiFljGUM5TKA11dgzMYoxtoCsboBlagRI1baBlDOUOpPNAVG1R2Q8sYuOwG
+        moIxuoGmYIxuoCkY4x8bAPsO1hzBDH8ykDxiOhPMMB04KpUHuqsZmFAqD3Q87lmeEZdO5L1idtyrEctA
+        TBNx8xWo+1oSDTRxBfgg+dfY+FpyGH4B7ATYROTUczoAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="DashboardBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DashboardBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, -1</value>
-  </data>
-  <data name="DashboardBtn.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="DashboardBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 65</value>
-  </data>
-  <data name="DashboardBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="DashboardBtn.Text" xml:space="preserve">
-    <value>Инфопанель</value>
-  </data>
-  <data name="DashboardBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DashboardBtn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtn.Name" xml:space="preserve">
-    <value>DashboardBtn</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtn.Parent" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="MenuPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="MenuPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 86</value>
-  </data>
-  <data name="MenuPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 643</value>
-  </data>
-  <data name="MenuPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;MenuPanel.Name" xml:space="preserve">
-    <value>MenuPanel</value>
-  </data>
-  <data name="&gt;&gt;MenuPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuPanel.Parent" xml:space="preserve">
-    <value>DesktopPanel</value>
-  </data>
-  <data name="&gt;&gt;MenuPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="DesktopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="DesktopPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="DesktopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 729</value>
-  </data>
-  <data name="DesktopPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;DesktopPanel.Name" xml:space="preserve">
-    <value>DesktopPanel</value>
-  </data>
-  <data name="&gt;&gt;DesktopPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DesktopPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DesktopPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>44</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
-  </data>
-  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 729</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Text, 8.25pt</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIACkKQAAZgAAAICAAAABACAAKAgBAAoqAABAQAAAAQAgAChCAAAyMgEAMDAAAAEA
@@ -3431,29 +2818,5 @@
         AAAAAAAAAAAAAP//AAD+fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAA4AcAAP//AAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 1080</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 768</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Система управления библиотекой</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
