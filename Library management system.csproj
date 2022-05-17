@@ -8,6 +8,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Platforms>AnyCPU;x86</Platforms>
     <StartupObject>Library_management_system.Program</StartupObject>
+    <AssemblyName>$(LibraryMS)</AssemblyName>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
