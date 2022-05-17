@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace Library_management_system
 {
@@ -21,7 +22,8 @@ namespace Library_management_system
             UserNameLbl.Text = UserName;
 
             random = new Random();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='" + Path.GetFileName("Database21.accdb") + "'";
+            //connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb";
         }
         //Methods
         public void MainForm_Load(object sender, EventArgs e)

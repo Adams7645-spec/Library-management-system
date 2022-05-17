@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace Library_management_system.Forms
 {
@@ -70,7 +71,7 @@ namespace Library_management_system.Forms
         public ReadersForm()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb;";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='" + Path.GetFileName("Database21.accdb") + "'";
         }
         private void Add_btn_Click(object sender, EventArgs e)
         {

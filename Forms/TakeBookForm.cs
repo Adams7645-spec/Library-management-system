@@ -13,7 +13,8 @@ namespace Library_management_system.Forms
         public TakeBookForm()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb;";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='" + Path.GetFileName("Database21.accdb") + "'";
+            //connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:/Program Files/Visual studio/Repos/LibraryMS/Library-management-system/Database21.accdb;";
 
             RefreshReadersData();
             RefreshBooksData();
@@ -38,9 +39,8 @@ namespace Library_management_system.Forms
                 DatagridName.DataSource = DataTable;
                 connection.Close();
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show("Error is:" + ex);
                 connection.Close();
             }
         }

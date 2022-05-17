@@ -161,10 +161,11 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.PlaceData.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PlaceData.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.PlaceData.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.PlaceData.Location = new System.Drawing.Point(0, 16);
             this.PlaceData.Name = "PlaceData";
@@ -184,6 +185,7 @@ namespace Library_management_system.Forms
             this.PlaceData.RowTemplate.DividerHeight = 5;
             this.PlaceData.RowTemplate.Height = 25;
             this.PlaceData.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PlaceData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PlaceData.Size = new System.Drawing.Size(214, 110);
             this.PlaceData.TabIndex = 36;
             this.PlaceData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PlaceData_CellContentClick);
@@ -214,10 +216,11 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.BooksData.DefaultCellStyle = dataGridViewCellStyle8;
+            this.BooksData.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.BooksData.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.BooksData.Location = new System.Drawing.Point(18, 174);
             this.BooksData.Name = "BooksData";
@@ -236,6 +239,7 @@ namespace Library_management_system.Forms
             this.BooksData.RowTemplate.DividerHeight = 5;
             this.BooksData.RowTemplate.Height = 25;
             this.BooksData.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.BooksData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BooksData.Size = new System.Drawing.Size(356, 388);
             this.BooksData.TabIndex = 38;
             this.BooksData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BooksData_CellContentClick);
@@ -464,10 +468,11 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ReaderBooks.DefaultCellStyle = dataGridViewCellStyle13;
+            this.ReaderBooks.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.ReaderBooks.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.ReaderBooks.Location = new System.Drawing.Point(12, 258);
             this.ReaderBooks.Name = "ReaderBooks";
@@ -476,7 +481,7 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ReaderBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
@@ -486,6 +491,7 @@ namespace Library_management_system.Forms
             this.ReaderBooks.RowTemplate.DividerHeight = 5;
             this.ReaderBooks.RowTemplate.Height = 25;
             this.ReaderBooks.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReaderBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ReaderBooks.Size = new System.Drawing.Size(342, 184);
             this.ReaderBooks.TabIndex = 37;
             this.ReaderBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReaderBooks_CellContentClick);
@@ -516,10 +522,11 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ReadersList.DefaultCellStyle = dataGridViewCellStyle18;
+            this.ReadersList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.ReadersList.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.ReadersList.Location = new System.Drawing.Point(15, 41);
             this.ReadersList.Name = "ReadersList";
@@ -529,7 +536,7 @@ namespace Library_management_system.Forms
             dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
             dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ReadersList.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
@@ -539,6 +546,7 @@ namespace Library_management_system.Forms
             this.ReadersList.RowTemplate.DividerHeight = 5;
             this.ReadersList.RowTemplate.Height = 25;
             this.ReadersList.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReadersList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ReadersList.Size = new System.Drawing.Size(339, 183);
             this.ReadersList.TabIndex = 36;
             this.ReadersList.SelectionChanged += new System.EventHandler(this.ReadersList_SelectionChanged);
